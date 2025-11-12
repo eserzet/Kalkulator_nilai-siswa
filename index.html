@@ -5,7 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kalkulator Nilai Siswa</title>
 <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+footer {
+    background: linear-gradient(135deg, #004aad, #0078ff);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .footer-container p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .github-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    color: #004aad;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+
+  .github-btn:hover {
+    background: #004aad;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 600px) {
+    .footer-container p {
+      font-size: 12px;
+    }
+
+    .github-btn {
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+  }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
     body {
         font-family: 'Poppins', sans-serif;
         background: linear-gradient(135deg, #667eea, #764ba2);
