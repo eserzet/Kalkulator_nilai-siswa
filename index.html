@@ -137,7 +137,7 @@
 
 <div class="container">
   <h1>Kalkulator Nilai Siswa SMA Informatika Nurul Bayan  </h1>
-  <p class="subtitle">Hitung rata-rata dari 13 mata pelajaran dengan cepat!</p>
+  <p class="subtitle">Hitung Nilai dengan cepat otomatis!</p>
 
   <form id="gradeForm">
     <label>Nama Siswa</label>
@@ -180,7 +180,7 @@
   const subjects = [
     "Matematika", "Bahasa Indonesia", "Bahasa Inggris",
     "Fisika", "Biologi", "Kimia",
-    "Geografi", "Ekonomi", "Sosiologi",
+    "Geografi", "Sejarah", "Ekonomi", "Sosiologi",
     "Pendidikan Agama", "Pancasila", "Seni Budaya", "Informatika/Algoritma"
   ];
   const subjectsDiv = document.getElementById('subjects');
@@ -324,7 +324,7 @@
 
     doc.setFontSize(9);
     doc.setTextColor(128, 128, 128);
-    doc.text('Dokumen ini dihasilkan secara otomatis oleh Kalkulator Nilai Siswa', 105, 280, { align: 'center' });
+    doc.text('Dokumen ini dihasilkan secara otomatis oleh Kalkulator Nilai Siswa By Mip&Mpi', 105, 280, { align: 'center' });
 
     doc.save(`Laporan_Nilai_${nama.replace(/\s+/g, '_')}_${kelas}.pdf`);
   }
