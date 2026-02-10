@@ -7,8 +7,24 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
+       /* Tinggi minimal satu layar penuh */
+    min-height: 100vh; 
+    
+    /* Path gambar kamu */
+    background-image: url('https://i.ibb.co.com/1YZNsVBR/RUSUN.png"');
+
+    /* PENTING: Gambar menutupi area tanpa distorsi */
+    background-size: cover;
+
+    /* Menjaga subjek foto tetap di tengah */
+    background-position: center;
+
+    /* Mencegah gambar berulang jika layar sangat besar */
+    background-repeat: no-repeat;
+
+    /* Menjaga background tetap diam saat scroll (efek parallax) */
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -130,6 +146,30 @@
     .footer-container p { font-size: 12px; }
     .github-btn { font-size: 13px; padding: 6px 12px; }
   }
+ /* Untuk Desktop & Umum */
+.hero {
+    height: 600px;
+    background-image: url('https://i.ibb.co.com/1YZNsVBR/RUSUN.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Khusus untuk HP (Layar di bawah 768px) */
+@media (max-width: 768px) {
+    .hero {
+        /* Kamu bisa ganti ke foto versi vertikal agar lebih ringan */
+        background-image: url('https://i.ibb.co.com/1YZNsVBR/RUSUN.png');
+        
+        /* Atau geser fokus kamera ke tengah agar tidak terpotong aneh */
+        background-position: center center; 
+        
+        /* Matikan fixed attachment di HP karena sering bug di browser mobile */
+        background-attachment: scroll;
+    }
+}
+.background-responsive {
+
+}
 </style>
 </head>
 <body>
