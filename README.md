@@ -2,7 +2,7 @@
 
 Selamat datang di **nuba grade**, sebuah aplikasi web yang dirancang khusus untuk membantu guru dan siswa SMA Informatika Nurul Bayan dalam menghitung nilai secara otomatis dan efisien. Aplikasi ini juga dilengkapi dengan fitur cetak dan unduh hasil dalam format PDF.
 
-🔗 Live demo: [kalkulator-nilai-siswa.vercel.app](https://kalkulator-nilai-siswa.vercel.app/)
+🔗 Live demo: [kalkulator-nilai-siswa.vercel.app](https://hitung-nilai-siswa.vercel.app/)
 
 ---
 
